@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <style>
+        body {
+            margin-top: 70px;
+            background-color: #333;
+            color: white;
+        }
+
+
+        head {
+            background-color: rgb(139, 226, 178);
+        }
+    </style>
+    <title>Weight Converter</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-two-thirds is-vcentered has-text-centered">
+                    <h1 class="title has-text-white  mg-large	">
+                        Weight Converter
+                    </h1>
+                    <p class="subtitle has-text-white  mb-8	">
+                        Christina Tomter 2021
+                    </p>
+                    <form class="form  mb-2">
+
+
+                        <div class="field">
+
+                            <div class="control has-icons-left has-icons-right block">
+                                <input class="input is-large has-text-centered" type="text" placeholder="Enter Pounds"
+                                     id="lbsInput">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </form>
+                    <div id="output">
+                        <div class="card">
+
+                            <div class="card-content has-background-primary mb-2">
+                                <p>Grams</p>
+                                <div id="gramsOutput"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-content has-background-success mb-2">
+                                <p>Kg</p>
+                                <div id="kgOutput"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-content has-background-info  mb-2">
+                                <p>Ounces</p>
+                                <div id="ozOutput"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+<script>
+    document.getElementById("output").style.visibility='hidden';
+    document.getElementById("lbsInput").addEventListener('input', function(e){
+        document.getElementById("output").style.visibility='visible';
+        let lbs = e.target.value;
+
+            document.getElementById("gramsOutput").innerHTML = lbs/0.0022046;
+            document.getElementById("kgOutput").innerHTML = lbs/2.2046
+            document.getElementById("ozOutput").innerHTML = lbs*16;
+    });
+</script>
+</body>
+
+
+</html>
