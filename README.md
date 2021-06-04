@@ -1,10 +1,9 @@
 - 👋 Hi, I’m @Sweetblowfish
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👀 I’m interested in Front-End development, and Project Management
+- 🌱 I’m currently learning ...Java, Javascript, Python, Bootstrap 4, Bulma and naturally, HTML and CSS
+
 
 <!---
-Hi I'm Christina
-I'm learning Java, Javascript, Python, Bootstrap 4, Bulma and naturally, HTML and CSS
+COMMENTS YAY
+
 --->
